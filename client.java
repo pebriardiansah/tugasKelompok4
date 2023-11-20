@@ -6,7 +6,7 @@ public class client{
 		Socket s = new Socket("localhost", 4999);
 
 		PrintWriter pr = new PrintWriter(s.getOutputStream());
-		pr.println("halo!");
+		pr.println("hai");
 		pr.flush();
 
 
