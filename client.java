@@ -9,7 +9,6 @@ public class client{
 		pr.println("halo!");
 		pr.flush();
 
-
 		InputStreamReader in = new InputStreamReader(s.getInputStream());
 		BufferedReader bf = new BufferedReader(in);
 
