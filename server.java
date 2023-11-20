@@ -14,7 +14,6 @@ public class server{
 		String str = bf.readLine();
 		System.out.println("Client : "+ str);
 
-
 		PrintWriter pr = new PrintWriter(s.getOutputStream());
 		pr.println("Selamat datang");
 		pr.flush();
