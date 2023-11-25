@@ -10,11 +10,11 @@ public class DeltaServer {
 	public static void main(String[] args) {
 		try {
 			serverSocket = new ServerSocket(4999);
-			System.out.println("Server is running...");
+			System.out.println("Server Sedang Berjalan...");
 
 			while (true) {
 				Socket s = serverSocket.accept();
-				System.out.println("New client connected");
+				System.out.println("Client Baru Terhubung");
 
 				// Create a new client handler for the connected client
 				ClientHandler clientHandler = new ClientHandler(s);
@@ -32,7 +32,7 @@ public class DeltaServer {
 			try {
 				if (serverSocket != null && !serverSocket.isClosed()) {
 					serverSocket.close();
-					System.out.println("ServerSocket closed");
+					System.out.println("ServerSocket Ditutup");
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
